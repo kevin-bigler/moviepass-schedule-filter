@@ -1,0 +1,31 @@
+{
+  "name": "moviepass-schedule-filter",
+  "version": "1.0.0",
+  "description": "View MoviePass schedule with helpful filters",
+  "main": "src/main/main.js",
+  "author": "Kevin Bigler <kevinbigler@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=unit_test jest src",
+    "build": "babel src -w -d lib"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-regenerator"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "reload": "^2.3.1"
+  }
+}
